@@ -19,6 +19,43 @@ You: "Update post 42 to published status"
 You: "What plugins are installed on my site?"
 ```
 
+## Demo
+
+Here's a real conversation showing the draft-to-publish workflow:
+
+```
+You: Create a draft post titled "Why AI Tools Matter for Content Creators"
+
+Claude: I'll create that draft post for you.
+
+✓ Created draft post:
+  ID: 142
+  Title: Why AI Tools Matter for Content Creators
+  Status: draft
+  Link: https://your-site.com/?p=142
+
+You: Add some content about productivity and automation
+
+Claude: I'll update the post with content about productivity and automation.
+
+✓ Updated post 142 with new content.
+
+You: Show me my draft posts
+
+Claude: Here are your draft posts:
+
+| ID  | Title                                      | Date       |
+|-----|-------------------------------------------|------------|
+| 142 | Why AI Tools Matter for Content Creators  | 2026-01-03 |
+| 138 | Upcoming Features Preview                  | 2026-01-02 |
+| 135 | Team Update Q1                             | 2025-12-28 |
+
+You: Publish post 142
+
+Claude: ✓ Published! Your post is now live at:
+https://your-site.com/2026/01/03/why-ai-tools-matter-for-content-creators/
+```
+
 ## Features
 
 - **Full CRUD for Posts** - Create, read, update, and delete posts

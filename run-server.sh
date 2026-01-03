@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /Users/gaupoit/Work/wordpress-mcp
-exec /Users/gaupoit/Work/wordpress-mcp/venv/bin/python -m wordpress_mcp.server
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
+exec "$SCRIPT_DIR/venv/bin/python" -m wordpress_mcp.server
